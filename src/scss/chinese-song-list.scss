@@ -1,0 +1,158 @@
+.chinese-songs {
+  .chinese-songs__container {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+  .chinese-songs__list-item {
+    font-size: 20px;
+    margin: 20px 0;
+
+    a {
+      display: table;
+      text-decoration: none;
+      margin: 0 auto;
+      width: 100%;
+      box-shadow: 2px 1px 5px #888888;
+      cursor: pointer;
+    }
+    a:link,
+    a:visited {
+      color: $SumiBlack;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      color: $Scarlet;
+      background-color: rgba(203, 58, 86, 0.05);
+      box-shadow: 1px 2px 5px #888888;
+    }
+
+    .lyrics {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  .info-container {
+    display: table-cell;
+    vertical-align: top;
+    padding: 20px;
+  }
+  .list-heading {
+  }
+  li[data-item-hidden="yes"] {
+    display: none;
+  }
+  div[data-lyrics-hidden="yes"] {
+    display: none;
+  }
+
+  .action-container {
+    text-align: right;
+
+    .action-container__delete-button {
+      display: inline-block;
+      color: $Scarlet;
+      cursor: pointer;
+    }
+  }
+
+  .chinese-songs__reset {
+    a {
+      display: inline-block;
+      text-decoration: none;
+      margin: 10px auto 0;
+      box-shadow: 2px 1px 5px #888888;
+      cursor: pointer;
+      padding: 10px 30px;
+    }
+    a:link,
+    a:visited {
+      color: $SumiBlack;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      color: $Scarlet;
+      background-color: rgba(203, 58, 86, 0.05);
+      box-shadow: 1px 2px 5px #888888;
+    }
+    input {
+      margin: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .chinese-songs {
+    .chinese-songs__container {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+    }
+    .chinese-songs__list-item {
+      font-size: 20px;
+      margin: 20px 0;
+
+      a {
+        display: table;
+        text-decoration: none;
+        margin: 0 auto;
+        width: 100%;
+        box-shadow: 2px 1px 5px #888888;
+        cursor: pointer;
+      }
+      a:link,
+      a:visited {
+        color: $SumiBlack;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        color: $Scarlet;
+        background-color: rgba(203, 58, 86, 0.05);
+        box-shadow: 1px 2px 5px #888888;
+      }
+
+      .lyrics {
+        text-align: center;
+        margin: 20px 0;
+      }
+    }
+    .info-container {
+      display: table-cell;
+      vertical-align: top;
+      padding: 20px;
+    }
+    .chinese-songs__reset {
+      a {
+        display: block;
+        text-decoration: none;
+        margin: 10px auto 0;
+        box-shadow: 2px 1px 5px #888888;
+        cursor: pointer;
+        padding: 10px 30px;
+      }
+      a:link,
+      a:visited {
+        color: $SumiBlack;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        color: $Scarlet;
+        background-color: rgba(203, 58, 86, 0.05);
+        box-shadow: 1px 2px 5px #888888;
+      }
+
+      input {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+.translator {
+
+  .translator__song {
+    display: table;
+    width: 100%;
+  }
+
+  .translator__input-container {
+    display: table-cell;
+    width: 50%;
+    padding: 20px 20px 20px 0;
+  }
+
+  .translator__output-container {
+    display: table-cell;
+    width: 50%;
+    padding: 20px 0 20px 20px;
+  }
+
+  .translator__input {
+    width: 100%;
+    resize: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .translator__output {
+    width: 100%;
+    resize: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .translator__actions {
+    margin: 20px 0 0 0;
+  }
+
+  .translator__form-error {
+    color: $Scarlet;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 2px 1px 5px #888888;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+
+  a:link,
+  a:visited {
+    color: $SumiBlack;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $Scarlet;
+    background-color: rgba(203, 58, 86, 0.05);
+    box-shadow: 1px 2px 5px #888888;
+  }
+
+  .translator__ruby-output{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .output-song-container {
+    display: inline-block;
+    text-align: center;
+
+    div {
+      margin: 10px 0;
+    }
+  }
+
+  ruby {
+    font-size: 28px;
+  }
+
+  rp, rt {
+    font-size: 18px;
+    font-family: serif;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .translator {
+
+    .translator__song {
+      display: block;
+      width: auto;
+    }
+
+    .translator__input-container {
+      display: block;
+      width: auto;
+      padding: 20px;
+    }
+
+    .translator__output-container {
+      display: table-cell;
+      width: 50%;
+      padding: 20px;
+    }
+
+    .translator__input {
+      width: 100%;
+      resize: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .translator__output {
+      width: 100%;
+      resize: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .translator__actions {
+      margin: 20px 0 0 0;
+    }
+
+    .translator__form-container {
+      display: block;
+
+      .translator__title {
+        display: block;
+      }
+
+      label {
+        display: block;
+
+      }
+
+      input {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .translator__form-error {
+      color: $Scarlet;
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 2px 1px 5px #888888;
+      cursor: pointer;
+    }
+
+    a:link,
+    a:visited {
+      color: $SumiBlack;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: $Scarlet;
+      background-color: rgba(203, 58, 86, 0.05);
+      box-shadow: 1px 2px 5px #888888;
+    }
+
+    .translator__ruby-output{
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+
+    .output-song-container {
+      display: inline-block;
+      text-align: center;
+
+      div {
+        margin: 10px 0;
+      }
+    }
+
+    ruby {
+      font-size: 28px;
+    }
+
+    rp, rt {
+      font-size: 18px;
+      font-family: serif;
+    }
+  }
+}

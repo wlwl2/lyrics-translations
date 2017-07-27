@@ -1,0 +1,25 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 60px 0;
+  padding: 0;
+  font-family: $LatoLatinLight;
+  height: 100%;
+}
+
+section[data-hidden="yes"] {
+  display: none;
+}
+
+ruby {
+  font-size: 48px;
+}
+
+rp, rt {
+  font-size: 18px;
+  font-family: serif;
+  padding: 0 2px;
+}

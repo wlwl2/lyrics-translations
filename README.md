@@ -1,4 +1,3 @@
-# lyrics-translations
-lyrics translations and formatter
+# Lyrics Translations
 
-This repository is created for a lyrics translator and formatter I will be releasing soon.
+Website with lyrics translations and a formatting tool.

@@ -4,4 +4,17 @@ footer {
   width: 100%;
   height: 60px;
   background-color: $White;
+  text-align: right;
+
+  .footer-menu {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    .footer-menu-repo {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 20px;
+    }
+  }
 }

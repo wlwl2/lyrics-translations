@@ -37,20 +37,22 @@ function hideAllListItems () {
   })
 }
 
-searchInput.addEventListener('input', function (event) {
-  window.localforage.getItem('songList', function (err, value) {
-    if (err) throw err
-    hideAllListItems()
-    function itemFoundIn (index) {
-      var listItems = document.querySelectorAll('.chinese-songs__container ul li')
-      var songInfo = pinyinToAlphabet(concatValues(value[index]))
-      if (songInfo.indexOf(searchInput.value) !== -1) {
-        // console.log(songInfo, index)
-        listItems[index].setAttribute('data-item-hidden', 'no')
+if (searchInput) {
+  searchInput.addEventListener('input', function (event) {
+    window.localforage.getItem('songList', function (err, value) {
+      if (err) throw err
+      hideAllListItems()
+      function itemFoundIn (index) {
+        var listItems = document.querySelectorAll('.chinese-songs__container ul li')
+        var songInfo = pinyinToAlphabet(concatValues(value[index]))
+        if (songInfo.indexOf(searchInput.value) !== -1) {
+          // console.log(songInfo, index)
+          listItems[index].setAttribute('data-item-hidden', 'no')
+        }
       }
-    }
-    for (var i = 0; i < value.length; i++) {
-      itemFoundIn(i)
-    }
-  })
-}, false)
+      for (var i = 0; i < value.length; i++) {
+        itemFoundIn(i)
+      }
+    })
+  }, false)
+}

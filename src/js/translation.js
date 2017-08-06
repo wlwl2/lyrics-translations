@@ -183,6 +183,7 @@ function actions () {
       })
     }
     var songListContainer = document.querySelector('.chinese-songs__container')
+    if (!songListContainer) return
     songListContainer.addEventListener('click', function (event) {
       if (event.target.className === 'action-container__delete-button') {
         var listItems = songListContainer.children[0].children
@@ -199,6 +200,7 @@ function actions () {
   deleteItem()
 }
 actions()
+
 // /////////////
 // Translator //
 // /////////////
@@ -236,6 +238,8 @@ function songForm () {
   return songObj
 }
 
+// If regex uses "g", use the exec() method multiple times to find
+// successive matches in the same string.
 function numberOfChineseCharacters (myString) {
   var myRegExp = /[,-.，\u3000-〾一-\u9ffe]/g
   var myArray
@@ -251,6 +255,7 @@ function numberOfChineseCharacters (myString) {
 
 function updateSavedSongsCount () {
   var savedSongsButtonText = document.querySelector('a[data-menu-button-id="chinese-songs"]')
+  if (!savedSongsButtonText) return
   window.localforage.getItem('songList', function (err, value) {
     if (err) throw err
     if (!value) {
@@ -268,6 +273,12 @@ updateSavedSongsCount()
 
 function languageSelectChanges () {
   function languageTextChanges (value) {
+    if (!languageSelect) return
+    if (!headTitle) return
+    if (!mainTitle) return
+    if (!documentation) return
+    if (!translator) return
+
     if (value === 'english') {
       languageSelect.value = 'english'
       headTitle.textContent = 'Lyrics Translations'
@@ -295,6 +306,7 @@ function languageSelectChanges () {
     languageTextChanges(value)
   })
 
+  if (!languageSelect) return
   languageSelect.addEventListener('change', function (event) {
     window.localforage.setItem('language', languageSelect.value, function (err) {
       if (err) throw err
@@ -310,6 +322,7 @@ languageSelectChanges()
 function addSongButtonClick () {
   var addSongButton = document.querySelector('.add-song-button')
   var formError = document.querySelector('.translator__form-error')
+  if (!addSongButton) return
   addSongButton.addEventListener('click', function (event) {
     function validation () {
       // Clear all errors
@@ -378,6 +391,7 @@ addSongButtonClick()
 
 function addExampleClick () {
   var addExampleButton = document.querySelector('.add-example-button')
+  if (!addExampleButton) return
   addExampleButton.addEventListener('click', function (event) {
     translatorInput.value = '这是一个例子\n' + 'zhè shì yī gè lì zi\n\n' +
     '这是一首歌曲歌词\n' + 'zhè shì yī shǒu gē qǔ gē cí\n\n' +
@@ -390,6 +404,7 @@ addExampleClick()
 
 function removeAllSongs () {
   var removeAllSongsButton = document.querySelector('.remove-all-songs')
+  if (!removeAllSongsButton) return
   removeAllSongsButton.addEventListener('click', function (event) {
     var userWantsToDelete = window.confirm('Are you sure you want to delete all saved songs permanently?')
     if (userWantsToDelete === false) return
@@ -463,6 +478,7 @@ function updatePreview (rubyDiv) {
 
 function initSong () {
   var storageSong = window.localStorage.getItem('current-song')
+  if (!translatorInput) return
   translatorInput.value = storageSong
   if (!createRubyDiv(storageSong)) return
   translatorOutput.value = createRubyDiv(storageSong).innerHTML
@@ -470,16 +486,19 @@ function initSong () {
 }
 initSong()
 
-translatorInput.addEventListener('input', function (event) {
-  var currentSong = translatorInput.value
-  window.localStorage.setItem('current-song', currentSong)
-  if (!createRubyDiv(currentSong)) return
-  translatorOutput.value = createRubyDiv(currentSong).innerHTML
-  updatePreview(createRubyDiv(currentSong))
-}, false)
+if (translatorInput) {
+  translatorInput.addEventListener('input', function (event) {
+    var currentSong = translatorInput.value
+    window.localStorage.setItem('current-song', currentSong)
+    if (!createRubyDiv(currentSong)) return
+    translatorOutput.value = createRubyDiv(currentSong).innerHTML
+    updatePreview(createRubyDiv(currentSong))
+  }, false)
+}
 
 function resetSong () {
   var resetSongButton = document.querySelector('.reset-song-button')
+  if (!resetSongButton) return
   resetSongButton.addEventListener('click', function (event) {
     englishTitle.value = ''
     pinyinTitle.value = ''
@@ -493,7 +512,7 @@ resetSong()
 
 function saveSongList () {
   var saveButton = document.querySelector('.chinese-songs-save-button')
-
+  if (!saveButton) return
   saveButton.addEventListener('click', function (event) {
     window.localforage.getItem('songList', function (err, value) {
       if (err) throw err
@@ -511,7 +530,7 @@ function loadSongList () {
   var loadSelection = document.querySelector('.chinese-songs-load-selector')
 
   var fileAsString
-
+  if (!loadSelection) return
   loadSelection.addEventListener('change', function (event) {
     var selectedFile = loadSelection.files[0]
     var reader = new FileReader()

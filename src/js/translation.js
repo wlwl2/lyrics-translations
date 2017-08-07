@@ -49,6 +49,7 @@ function toggleLyrics () {
   function resetSongList () {
     var resetButton = document.querySelector('.chinese-songs-reset-button')
     var searchInput = document.querySelector('.search-bar .search-bar__container input')
+    if (!resetButton) return
     resetButton.addEventListener('click', function (event) {
       searchInput.value = ''
       showAllSongItems()
@@ -159,6 +160,7 @@ function getLatestSongList () {
         lyrics.innerHTML = song.songLyrics
         listItemDiv.appendChild(lyrics)
         listItem.appendChild(listItemDiv)
+        if (!songListContainer) return
         songListContainer.appendChild(listItem)
       })
     }

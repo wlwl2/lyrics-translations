@@ -59,6 +59,7 @@
   }
   function backButtonEvent () {
     var searchInput = document.querySelector('.search-bar .search-bar__container input')
+    if (!backButton) return
     backButton.addEventListener('click', function (event) {
       searchBar.setAttribute('data-hidden', 'yes')
       menuBar.setAttribute('data-hidden', 'no')

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Lyrics Translations</title>
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="main-title">
+        <div class="main-title__container">
+          <div class="main-title__logo">
+            <a tabindex="0">
+              <img src="assets\art\jp-chrysanthemum.png" alt="" height="60px">
+              <span>Lyrics Translations</span>
+            </a>
+          </div>
+          <div class="main-title__language-select">
+            <select class="main-title__language-select-menu" name="">
+              <option value="english">English</option>
+              <option value="simplified-chinese">中华人民共和国 (简体中文)</option>
+              <option value="japanese">日本 (日本語)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <nav class="main-menu" data-hidden="no">
+        <ul>
+          <li><a tabindex="0" data-menu-button-id="documentation">Guide</a></li>
+          <li><a tabindex="0" data-menu-button-id="translator">Chinese Song Translator</a></li>
+          <li><a tabindex="0" data-menu-button-id="chinese-songs">Saved Chinese Songs</a></li>
+          <li><a tabindex="0" data-menu-button-id="japanese-songs">Saved Japanese Songs</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar" data-hidden="yes">
+        <div class="search-bar__container">
+          <div class="search-bar__input-container">
+            <input type="text" name="" value="" tabindex="0">
+          </div>
+          <img src="assets\simple-images\mag-glass-plain.svg" alt="search" tabindex="0">
+        </div>
+        <div class="search-bar__back">
+          <a class="search-bar__back-button" tabindex="0">Back to Translator</a>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__container">
+          <section class="about" data-section-id="documentation" data-hidden="yes">
+            <div class="about__paragraph">
+              This website converts Chinese and Japanese lyrics
+              and text into HTML ruby elements.
+            </div>
+            <div class="about__paragraph">
+              You can use these characters as chinese in the add song form:
+              comma(,) dash (-) full stop (.) chinese comma (，)
+              chinese full stop (。)
+            </div>
+            <div class="about__paragraph">
+              For song input you can use spaces as chinese characters
+              so that you can enter english words.
+            </div>
+          </section>
+          <section class="translator" data-section-id="translator" data-hidden="no">
+            <div class="translator__error-container" data-error-hidden="yes"></div>
+            <div class="translator__form-container">
+              <div class="translator__form-error"></div>
+              <div class="translator__title">
+                <label for="title-english">Title (English):</label>
+                <input type="text" name="title-english" value="">
+                <label for="title-pinyin">Title (Pinyin):</label>
+                <input type="text" name="title-pinyin" value="">
+                <label for="title-chinese">Title (Chinese):</label>
+                <input type="text" name="title-chinese" value="">
+              </div>
+              <div class="translator__artist">
+                <label for="artist-english"> Artist (English):</label>
+                <input type="text" name="artist-english" value="">
+                <label for="artist-pinyin"> Artist (Pinyin):</label>
+                <input type="text" name="artist-pinyin" value="">
+                <label for="artist-chinese"> Artist (Chinese):</label>
+                <input type="text" name="artist-chinese" value="">
+              </div>
+              <div class="translator__actions">
+                <a class="add-song-button" tabindex="0">Add Song</a>
+                <a class="reset-song-button" tabindex="0">Reset</a>
+                <a class="remove-all-songs" tabindex="0">Remove All Songs</a>
+                <a class="add-example-button" tabindex="0">Add Example</a>
+              </div>
+            </div>
+            <div class="translator__song">
+              <div class="translator__input-container">
+                <label for="translator-input">Input:</label>
+                <textarea class="translator__input" name="translator-input" rows="20"></textarea>
+              </div>
+              <div class="translator__output-container">
+                <label for="translator-output">Output:</label>
+                <textarea class="translator__output"name="translator-output" rows="20"></textarea>
+              </div>
+            </div>
+            <div class="translator__ruby-output"></div>
+          </section>
+          <section class="chinese-songs" data-section-id="chinese-songs" data-hidden="yes">
+            <div class="chinese-songs__reset">
+              <a tabindex="0" class="chinese-songs-reset-button">Show All Songs</a>
+              <a tabindex="0" class="chinese-songs-save-button">Save List</a>
+              <a tabindex="0" class="chinese-songs-load-button">Load List</a>
+              <input type="file" class="chinese-songs-load-selector">
+            </div>
+            <div class="chinese-songs__container">
+              <ul></ul>
+            </div>
+          </section>
+          <section class="japanese-songs" data-section-id="japanese-songs" data-hidden="yes">
+              Japanese Songs
+              To be updated.
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav class="footer-menu">
+        <a class="footer-menu-repo" href="https://github.com/wlwl2/lyrics-translations">Source Code</a>
+      </nav>
+    </footer>
+
+    <script src="src/js/localforage.min.js"></script>
+    <script src="src/js/FileSaver.min.js"></script>
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/translator.js"></script>
+    <script src="src/js/search.js"></script>
+  </body>
+</html>

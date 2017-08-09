@@ -22870,7 +22870,7 @@
 	        _react2.default.createElement(
 	          'a',
 	          { tabIndex: '0' },
-	          _react2.default.createElement('img', { src: '/src/assets/art/jp-chrysanthemum.png', alt: '', height: '60px' }),
+	          _react2.default.createElement('img', { src: 'src/assets/art/jp-chrysanthemum.png', alt: '', height: '60px' }),
 	          _react2.default.createElement(
 	            'span',
 	            null,
@@ -23006,7 +23006,7 @@
 	        { className: 'search-bar__input-container' },
 	        _react2.default.createElement('input', { type: 'text', name: ' value=', tabIndex: '0' })
 	      ),
-	      _react2.default.createElement('img', { src: '/src/assets/simple-images/mag-glass-plain.svg', alt: 'search', tabIndex: '0' })
+	      _react2.default.createElement('img', { src: 'src/assets/simple-images/mag-glass-plain.svg', alt: 'search', tabIndex: '0' })
 	    ),
 	    _react2.default.createElement(
 	      'div',

@@ -41,6 +41,7 @@ if (searchInput) {
   searchInput.addEventListener('input', function (event) {
     window.localforage.getItem('songList', function (err, value) {
       if (err) throw err
+      if (!value) return
       hideAllListItems()
       function itemFoundIn (index) {
         var listItems = document.querySelectorAll('.chinese-songs__container ul li')

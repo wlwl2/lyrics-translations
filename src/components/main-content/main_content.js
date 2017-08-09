@@ -25,19 +25,19 @@ const MainContent = (props) => {
             <div className='translator__form-error' />
             <div className='translator__title'>
               <label htmlFor='title-english'>Title (English):</label>
-              <input type='text' name='title-english' value='' />
+              <input type='text' name='title-english' />
               <label htmlFor='title-pinyin'>Title (Pinyin):</label>
-              <input type='text' name='title-pinyin' value='' />
+              <input type='text' name='title-pinyin' />
               <label htmlFor='title-chinese'>Title (Chinese):</label>
-              <input type='text' name='title-chinese' value='' />
+              <input type='text' name='title-chinese' />
             </div>
             <div className='translator__artist'>
               <label htmlFor='artist-english'> Artist (English):</label>
-              <input type='text' name='artist-english' value='' />
+              <input type='text' name='artist-english' />
               <label htmlFor='artist-pinyin'> Artist (Pinyin):</label>
-              <input type='text' name='artist-pinyin' value='' />
+              <input type='text' name='artist-pinyin' />
               <label htmlFor='artist-chinese'> Artist (Chinese):</label>
-              <input type='text' name='artist-chinese' value='' />
+              <input type='text' name='artist-chinese' />
             </div>
             <div className='translator__actions'>
               <a className='add-song-button' tabIndex='0'>Add Song</a>

@@ -23083,19 +23083,19 @@
 	              { htmlFor: 'title-english' },
 	              'Title (English):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-english', value: '' }),
+	            _react2.default.createElement('input', { type: 'text', name: 'title-english' }),
 	            _react2.default.createElement(
 	              'label',
 	              { htmlFor: 'title-pinyin' },
 	              'Title (Pinyin):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-pinyin', value: '' }),
+	            _react2.default.createElement('input', { type: 'text', name: 'title-pinyin' }),
 	            _react2.default.createElement(
 	              'label',
 	              { htmlFor: 'title-chinese' },
 	              'Title (Chinese):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-chinese', value: '' })
+	            _react2.default.createElement('input', { type: 'text', name: 'title-chinese' })
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -23105,19 +23105,19 @@
 	              { htmlFor: 'artist-english' },
 	              ' Artist (English):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-english', value: '' }),
+	            _react2.default.createElement('input', { type: 'text', name: 'artist-english' }),
 	            _react2.default.createElement(
 	              'label',
 	              { htmlFor: 'artist-pinyin' },
 	              ' Artist (Pinyin):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-pinyin', value: '' }),
+	            _react2.default.createElement('input', { type: 'text', name: 'artist-pinyin' }),
 	            _react2.default.createElement(
 	              'label',
 	              { htmlFor: 'artist-chinese' },
 	              ' Artist (Chinese):'
 	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-chinese', value: '' })
+	            _react2.default.createElement('input', { type: 'text', name: 'artist-chinese' })
 	          ),
 	          _react2.default.createElement(
 	            'div',

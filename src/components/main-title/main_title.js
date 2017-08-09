@@ -5,10 +5,10 @@ const MainTitle = (props) => {
     <div className='main-title'>
       <div className='main-title__container'>
         <div className='main-title__logo'>
-          <div tabIndex='0'>
+          <a tabIndex='0'>
             <img src={'/src/assets/art/jp-chrysanthemum.png'} alt={''} height='60px' />
             <span>Lyrics Translations</span>
-          </div>
+          </a>
         </div>
         <div className='main-title__language-select'>
           <select className='main-title__language-select-menu'>

@@ -9,7 +9,7 @@ const BodyContainer = (props) => {
   return (
     <div className='body-container'>
       <MainTitle />
-
+      <MainMenu />
     </div>
   )
 }

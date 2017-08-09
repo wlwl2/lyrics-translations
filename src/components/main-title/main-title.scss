@@ -22,7 +22,7 @@
       }
     }
 
-    a {
+    div {
       font-size: 36px;
       text-decoration: none;
       cursor: pointer;
@@ -41,14 +41,14 @@
 
     }
 
-    a:link,
-    a:visited {
+    div:link,
+    div:visited {
       color: $SumiBlack;
     }
 
-    a:hover,
-    a:focus,
-    a:active {
+    div:hover,
+    div:focus,
+    div:active {
       color: $Scarlet;
     }
   }
@@ -79,7 +79,7 @@
         }
       }
 
-      a {
+      div {
         font-size: 36px;
         text-decoration: none;
         cursor: pointer;
@@ -99,14 +99,14 @@
 
       }
 
-      a:link,
-      a:visited {
+      div:link,
+      div:visited {
         color: $SumiBlack;
       }
 
-      a:hover,
-      a:focus,
-      a:active {
+      div:hover,
+      div:focus,
+      div:active {
         color: $Scarlet;
       }
     }

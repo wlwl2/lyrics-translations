@@ -23039,6 +23039,22 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _about = __webpack_require__(/*! ../about/about */ 191);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _translator = __webpack_require__(/*! ../translator/translator */ 192);
+	
+	var _translator2 = _interopRequireDefault(_translator);
+	
+	var _chinese_songs = __webpack_require__(/*! ../chinese-songs/chinese_songs */ 193);
+	
+	var _chinese_songs2 = _interopRequireDefault(_chinese_songs);
+	
+	var _japanese_songs = __webpack_require__(/*! ../japanese-songs/japanese_songs */ 194);
+	
+	var _japanese_songs2 = _interopRequireDefault(_japanese_songs);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var MainContent = function MainContent(props) {
@@ -23048,162 +23064,10 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'main-content__container' },
-	      _react2.default.createElement(
-	        'section',
-	        { className: 'about', 'data-section-id': 'documentation', 'data-hidden': 'yes' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'about__paragraph' },
-	          'This website converts Chinese and Japanese lyrics and text into HTML ruby elements.'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'about__paragraph' },
-	          'You can use these characters as chinese in the add song form: comma(,) dash (-) full stop (.) chinese comma (\uFF0C) chinese full stop (\u3002)'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'about__paragraph' },
-	          'For song input you can use spaces as chinese characters so that you can enter english words.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'section',
-	        { className: 'translator', 'data-section-id': 'translator', 'data-hidden': 'no' },
-	        _react2.default.createElement('div', { className: 'translator__error-container', 'data-error-hidden': 'yes' }),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'translator__form-container' },
-	          _react2.default.createElement('div', { className: 'translator__form-error' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'translator__title' },
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'title-english' },
-	              'Title (English):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-english' }),
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'title-pinyin' },
-	              'Title (Pinyin):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-pinyin' }),
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'title-chinese' },
-	              'Title (Chinese):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'title-chinese' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'translator__artist' },
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'artist-english' },
-	              ' Artist (English):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-english' }),
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'artist-pinyin' },
-	              ' Artist (Pinyin):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-pinyin' }),
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'artist-chinese' },
-	              ' Artist (Chinese):'
-	            ),
-	            _react2.default.createElement('input', { type: 'text', name: 'artist-chinese' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'translator__actions' },
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'add-song-button', tabIndex: '0' },
-	              'Add Song'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'reset-song-button', tabIndex: '0' },
-	              'Reset'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'remove-all-songs', tabIndex: '0' },
-	              'Remove All Songs'
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'add-example-button', tabIndex: '0' },
-	              'Add Example'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'translator__song' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'translator__input-container' },
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'translator-input' },
-	              'Input:'
-	            ),
-	            _react2.default.createElement('textarea', { className: 'translator__input', name: 'translator-input', rows: '20' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'translator__output-container' },
-	            _react2.default.createElement(
-	              'label',
-	              { htmlFor: 'translator-output' },
-	              'Output:'
-	            ),
-	            _react2.default.createElement('textarea', { className: 'translator__output', name: 'translator-output', rows: '20' })
-	          )
-	        ),
-	        _react2.default.createElement('div', { className: 'translator__ruby-output' })
-	      ),
-	      _react2.default.createElement(
-	        'section',
-	        { className: 'chinese-songs', 'data-section-id': 'chinese-songs', 'data-hidden': 'yes' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'chinese-songs__reset' },
-	          _react2.default.createElement(
-	            'a',
-	            { tabIndex: '0', className: 'chinese-songs-reset-button' },
-	            'Show All Songs'
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { tabIndex: '0', className: 'chinese-songs-save-button' },
-	            'Save List'
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { tabIndex: '0', className: 'chinese-songs-load-button' },
-	            'Load List'
-	          ),
-	          _react2.default.createElement('input', { type: 'file', className: 'chinese-songs-load-selector' })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'chinese-songs__container' },
-	          _react2.default.createElement('ul', null)
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'section',
-	        { className: 'japanese-songs', 'data-section-id': 'japanese-songs', 'data-hidden': 'yes' },
-	        'Japanese Songs To be updated.'
-	      )
+	      _react2.default.createElement(_about2.default, null),
+	      _react2.default.createElement(_translator2.default, null),
+	      _react2.default.createElement(_chinese_songs2.default, null),
+	      _react2.default.createElement(_japanese_songs2.default, null)
 	    )
 	  );
 	};
@@ -23246,6 +23110,260 @@
 	};
 	
 	exports.default = Footer;
+
+/***/ }),
+/* 191 */
+/*!***************************************!*\
+  !*** ./src/components/about/about.js ***!
+  \***************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = function About(props) {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'about', 'data-section-id': 'documentation', 'data-hidden': 'yes' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'about__paragraph' },
+	      'This website converts Chinese and Japanese lyrics and text into HTML ruby elements.'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'about__paragraph' },
+	      'You can use these characters as chinese in the add song form: comma(,) dash (-) full stop (.) chinese comma (\uFF0C) chinese full stop (\u3002)'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'about__paragraph' },
+	      'For song input you can use spaces as chinese characters so that you can enter english words.'
+	    )
+	  );
+	};
+	
+	exports.default = About;
+
+/***/ }),
+/* 192 */
+/*!*************************************************!*\
+  !*** ./src/components/translator/translator.js ***!
+  \*************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Translator = function Translator(props) {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'translator', 'data-section-id': 'translator', 'data-hidden': 'no' },
+	    _react2.default.createElement('div', { className: 'translator__error-container', 'data-error-hidden': 'yes' }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'translator__form-container' },
+	      _react2.default.createElement('div', { className: 'translator__form-error' }),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'translator__title' },
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'title-english' },
+	          'Title (English):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'title-english' }),
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'title-pinyin' },
+	          'Title (Pinyin):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'title-pinyin' }),
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'title-chinese' },
+	          'Title (Chinese):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'title-chinese' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'translator__artist' },
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'artist-english' },
+	          ' Artist (English):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'artist-english' }),
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'artist-pinyin' },
+	          ' Artist (Pinyin):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'artist-pinyin' }),
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'artist-chinese' },
+	          ' Artist (Chinese):'
+	        ),
+	        _react2.default.createElement('input', { type: 'text', name: 'artist-chinese' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'translator__actions' },
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'add-song-button', tabIndex: '0' },
+	          'Add Song'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'reset-song-button', tabIndex: '0' },
+	          'Reset'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'remove-all-songs', tabIndex: '0' },
+	          'Remove All Songs'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'add-example-button', tabIndex: '0' },
+	          'Add Example'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'translator__song' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'translator__input-container' },
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'translator-input' },
+	          'Input:'
+	        ),
+	        _react2.default.createElement('textarea', { className: 'translator__input', name: 'translator-input', rows: '20' })
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'translator__output-container' },
+	        _react2.default.createElement(
+	          'label',
+	          { htmlFor: 'translator-output' },
+	          'Output:'
+	        ),
+	        _react2.default.createElement('textarea', { className: 'translator__output', name: 'translator-output', rows: '20' })
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: 'translator__ruby-output' })
+	  );
+	};
+	
+	exports.default = Translator;
+
+/***/ }),
+/* 193 */
+/*!*******************************************************!*\
+  !*** ./src/components/chinese-songs/chinese_songs.js ***!
+  \*******************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ChineseSongs = function ChineseSongs(props) {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'chinese-songs', 'data-section-id': 'chinese-songs', 'data-hidden': 'yes' },
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'chinese-songs__reset' },
+	      _react2.default.createElement(
+	        'a',
+	        { tabIndex: '0', className: 'chinese-songs-reset-button' },
+	        'Show All Songs'
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { tabIndex: '0', className: 'chinese-songs-save-button' },
+	        'Save List'
+	      ),
+	      _react2.default.createElement(
+	        'a',
+	        { tabIndex: '0', className: 'chinese-songs-load-button' },
+	        'Load List'
+	      ),
+	      _react2.default.createElement('input', { type: 'file', className: 'chinese-songs-load-selector' })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'chinese-songs__container' },
+	      _react2.default.createElement('ul', null)
+	    )
+	  );
+	};
+	
+	exports.default = ChineseSongs;
+
+/***/ }),
+/* 194 */
+/*!*********************************************************!*\
+  !*** ./src/components/japanese-songs/japanese_songs.js ***!
+  \*********************************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(/*! react */ 2);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var JapaneseSongs = function JapaneseSongs(props) {
+	  return _react2.default.createElement(
+	    'section',
+	    { className: 'japanese-songs', 'data-section-id': 'japanese-songs', 'data-hidden': 'yes' },
+	    'Japanese Songs ',
+	    _react2.default.createElement('br', null),
+	    'To be updated.'
+	  );
+	};
+	
+	exports.default = JapaneseSongs;
 
 /***/ })
 /******/ ]);

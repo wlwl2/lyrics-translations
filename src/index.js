@@ -21,4 +21,5 @@ class App extends Component {
   }
 }
 
+// take this component html and put it on the page (in the DOM)
 ReactDOM.render(<App />, document.querySelector('.container'))

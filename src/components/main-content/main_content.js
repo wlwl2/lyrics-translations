@@ -4,6 +4,7 @@ import About from '../about/about'
 import Translator from '../translator/translator'
 import ChineseSongs from '../chinese-songs/chinese_songs'
 import JapaneseSongs from '../japanese-songs/japanese_songs'
+import Enlarge from '../enlarge/enlarge'
 
 const MainContent = (props) => {
   return (
@@ -13,6 +14,7 @@ const MainContent = (props) => {
         <Translator />
         <ChineseSongs />
         <JapaneseSongs />
+        <Enlarge />
       </div>
     </div>
   )

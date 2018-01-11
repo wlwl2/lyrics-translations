@@ -19,6 +19,17 @@ class App extends Component {
       </div>
     )
   }
+
+  componentDidMount () {
+    function enlargeText () {
+      var enlarge = document.querySelector('.enlarge-input textarea')
+      var results = document.querySelector('.enlarge-results')
+      enlarge.addEventListener('input', function (event) {
+        results.innerHTML = '<pre>' + event.target.value + '</pre>'
+      }, false)
+    }
+    enlargeText()
+  }
 }
 
 // take this component html and put it on the page (in the DOM)

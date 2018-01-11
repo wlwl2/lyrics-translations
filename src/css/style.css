@@ -110,7 +110,6 @@ rp, rt {
   text-align: center; }
 .main-menu li {
   display: table-cell;
-  width: 25%;
   padding: 0 20px; }
   .main-menu li a {
     display: inline-block;
@@ -532,5 +531,11 @@ footer {
   .translator rp, .translator rt {
     font-size: 18px;
     font-family: serif; } }
+.enlarge-input textarea {
+  width: 100%;
+  resize: none; }
+
+.enlarge-results {
+  font-size: 60px; }
 
 /*# sourceMappingURL=style.css.map */

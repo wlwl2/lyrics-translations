@@ -176,8 +176,9 @@ footer {
     height: 100%; }
     footer .footer-menu .footer-menu-repo {
       display: table-cell;
-      vertical-align: middle;
-      padding: 0 20px; }
+      vertical-align: middle; }
+    footer .footer-menu a {
+      padding: 20px; }
 
 .about {
   text-align: center;

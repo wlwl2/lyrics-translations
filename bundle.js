@@ -22514,9 +22514,18 @@
 	      'nav',
 	      { className: 'footer-menu' },
 	      _react2.default.createElement(
-	        'a',
-	        { href: 'https://github.com/wlwl2/lyrics-translations', className: 'footer-menu-repo' },
-	        'Source Code'
+	        'div',
+	        { className: 'footer-menu-repo' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/wlwl2/lyrics-translations' },
+	          'Source'
+	        ),
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://wlwl2.com/' },
+	          'wlwl2'
+	        )
 	      )
 	    )
 	  );

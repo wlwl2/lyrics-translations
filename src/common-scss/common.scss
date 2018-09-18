@@ -8,6 +8,8 @@ body {
   padding: 0;
   font-family: $LatoLatinLight;
   height: 100%;
+  background-color: $White;
+  color: $SumiBlack;
 }
 
 section[data-hidden="yes"] {
@@ -22,4 +24,14 @@ rp, rt {
   font-size: 18px;
   font-family: serif;
   padding: 0 2px;
+}
+
+input {
+  background-color: $White;
+  border: 1px solid grey;
+  color: $SumiBlack;
+}
+
+select {
+  color: $SumiBlack;
 }

@@ -6,7 +6,7 @@ const MainTitle = (props) => {
       <div className='main-title__container'>
         <div className='main-title__logo'>
           <a tabIndex='0'>
-            <img src={'src/assets/art/jp-chrysanthemum.png'} alt={''} height='60px' />
+            <img src={'src/assets/art/jp-chrysanthemum-no-bg.png'} alt={''} height='60px' />
             <span>Lyrics Translations</span>
           </a>
         </div>

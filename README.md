@@ -2,6 +2,11 @@
 
 Website with lyrics translations and a formatting tool.
 
+## Development:
+
+Run `grunt` when editing css.
+Run `npm start` when editing js.
+
 ## A list of things to do
 
 fix add example button (add example does not update the output immediately)

@@ -11,10 +11,11 @@ const MainTitle = (props) => {
           </a>
         </div>
         <div className='main-title__language-select'>
+          <span className='main-title__language-select-title'>Language:</span>
           <select className='main-title__language-select-menu'>
             <option value='english'>English</option>
-            <option value='simplified-chinese'>中华人民共和国 (简体中文)</option>
-            <option value='japanese'>日本 (日本語)</option>
+            <option value='simplified-chinese'>简体中文</option>
+            <option value='japanese'>日本語</option>
           </select>
         </div>
       </div>

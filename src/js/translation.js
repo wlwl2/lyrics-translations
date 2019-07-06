@@ -208,6 +208,7 @@ actions()
 // /////////////
 
 var languageSelect = document.querySelector('.main-title__language-select-menu')
+var languageSelectTitle = document.querySelector('.main-title__language-select-title')
 
 var headTitle = document.querySelector('html title')
 var mainTitle = document.querySelector('.main-title__logo a span')
@@ -283,6 +284,7 @@ function languageSelectChanges () {
 
     if (value === 'english') {
       languageSelect.value = 'english'
+      languageSelectTitle.textContent = 'Language:'
       headTitle.textContent = 'Lyrics Translations'
       mainTitle.textContent = 'Lyrics Translations'
       documentation.textContent = 'Guide'
@@ -290,6 +292,7 @@ function languageSelectChanges () {
     }
     if (value === 'simplified-chinese') {
       languageSelect.value = 'simplified-chinese'
+      languageSelectTitle.textContent = '语言:'
       headTitle.textContent = '歌词翻译'
       mainTitle.textContent = '歌词翻译'
       documentation.textContent = '教程'
@@ -298,6 +301,7 @@ function languageSelectChanges () {
     }
     if (value === 'japanese') {
       languageSelect.value = 'japanese'
+      languageSelectTitle.textContent = '言語:'
       headTitle.textContent = '歌詞の翻訳'
       mainTitle.textContent = '歌詞の翻訳'
     }

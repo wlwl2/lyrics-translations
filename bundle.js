@@ -22020,6 +22020,11 @@
 	        'div',
 	        { className: 'main-title__language-select' },
 	        _react2.default.createElement(
+	          'span',
+	          { className: 'main-title__language-select-title' },
+	          'Language:'
+	        ),
+	        _react2.default.createElement(
 	          'select',
 	          { className: 'main-title__language-select-menu' },
 	          _react2.default.createElement(
@@ -22030,12 +22035,12 @@
 	          _react2.default.createElement(
 	            'option',
 	            { value: 'simplified-chinese' },
-	            '\u4E2D\u534E\u4EBA\u6C11\u5171\u548C\u56FD (\u7B80\u4F53\u4E2D\u6587)'
+	            '\u7B80\u4F53\u4E2D\u6587'
 	          ),
 	          _react2.default.createElement(
 	            'option',
 	            { value: 'japanese' },
-	            '\u65E5\u672C (\u65E5\u672C\u8A9E)'
+	            '\u65E5\u672C\u8A9E'
 	          )
 	        )
 	      )

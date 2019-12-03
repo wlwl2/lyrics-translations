@@ -4,7 +4,7 @@ const About = (props) => {
   return (
     <section className='about' data-section-id='documentation' data-hidden='yes'>
       <div className='about__paragraph'>
-        This website converts Chinese and Japanese lyrics
+        This website converts Chinese lyrics
         and text into HTML ruby elements.
       </div>
       <div className='about__paragraph'>

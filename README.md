@@ -12,7 +12,7 @@ indexedDB) and in the user's file system (it even works on smart phones- I
 
 Open `index.html` in any browser.
 
-## Development:
+## Development
 
 Brave browser prevents localStorage and localForage from working normally by
 default. It should be fine once this app gets to a production stage.
